@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "id": "backend-user-server",
+      "name": "backend-user-server",
+      "protocol": "http",
+      "serviceId": "backend-user-server",
+      "prefix": "/user/**",
+      "paths": [
+        "/user/login"
+      ],
+      "order": null,
+      "filterConfigs": [
+        {
+          "id": "user_auth_filter",
+          "config": null
+        },
+        {
+          "id": "load_balance_filter",
+          "config": "{\"load_balance\":\"random\"}"
+        }
+      ]
+    }
+  ],
+  "serverPrefixName": "/user"
+}

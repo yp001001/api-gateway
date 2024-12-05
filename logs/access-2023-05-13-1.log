@@ -1,0 +1,4 @@
+2023-04-25 15:26:07.072 60 127.0.0.1 backend-http-server:1.0.0 GET /http-server/ping 200 4 
+2023-04-25 15:26:19.686 4 127.0.0.1 backend-http-server:1.0.0 GET /http-server/ping 200 4 
+2023-04-25 15:26:21.598 4 127.0.0.1 backend-http-server:1.0.0 GET /http-server/ping 200 4 
+2023-04-25 15:26:23.259 4 127.0.0.1 backend-http-server:1.0.0 GET /http-server/ping 200 4 

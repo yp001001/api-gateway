@@ -1,0 +1,26 @@
+server:
+  port: 9000
+
+dubbo:
+  application:
+    name: api-gateway-test
+    version: 1.0.0
+  registry:
+    #address: N/A 泛化调用不能使用此方式
+    address: nacos://${nacos.address:127.0.0.1}:8848
+  protocol:
+    name: dubbo
+    port: 20881
+  scan:
+    base-packages: org.apache.dubbo.sample.quickstart.dubbo.rpc
+
+gateway:
+  config:
+    data-id: dubbo-service
+    prefix-path: /dubbo
+    server-addr: 127.0.0.1:8848
+    group: dev
+api:
+  registerAddress: 127.0.0.1:8848
+  env: dev
+  gray: false
